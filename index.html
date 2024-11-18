@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="container">
+        <button id="modeToggleBtn" class="modeToggleBtn" onclick="toggleMode()">Ubah Mode Tampilan</button>
+        <h1 class="main-title">Laporan Teori</h1>
+        <p class="author">Ahmad Miftahul Arza Firisky | 202331067</p>
+
+        <div class="section">
+            <h2 class="section-title" onclick="showContent('content1')">1. Mengapa Menggunakan HTML, CSS, dan JavaScript dalam Pemrograman Web?</h2>
+            <div id="content1" class="content" style="display: none;">
+                <h3 onclick="confirmToggleContent('htmlContent', 'HTML')">1. HTML (HyperText Markup Language)</h3>
+                <div id="htmlContent" class="subcontent" style="display: none;">
+                    <p>HTML merupakan dasar dari setiap halaman web. Bahasa ini digunakan untuk menyusun struktur dan konten halaman, seperti teks, gambar, tabel, dan formulir. Tanpa HTML, halaman web tidak memiliki kerangka untuk menampilkan informasi di browser.</p>
+                </div>
+
+                <h3 onclick="confirmToggleContent('cssContent', 'CSS')">2. CSS (Cascading Style Sheets)</h3>
+                <div id="cssContent" class="subcontent" style="display: none;">
+                    <p>CSS memberikan gaya dan tata letak pada halaman web. Dengan CSS, pengembang dapat mengatur warna, font, margin, tata letak, dan elemen desain lainnya. Pemisahan antara konten (HTML) dan desain (CSS) memudahkan pengelolaan serta memastikan tampilan yang konsisten di seluruh halaman web.</p>
+                </div>
+
+                <h3 onclick="confirmToggleContent('jsContent', 'JavaScript')">3. JavaScript</h3>
+                <div id="jsContent" class="subcontent" style="display: none;">
+                    <p>JavaScript adalah bahasa pemrograman yang memungkinkan interaktivitas di halaman web. Bahasa ini memungkinkan pengembang membuat fitur seperti validasi formulir, animasi, atau aplikasi interaktif. JavaScript menjadikan halaman lebih hidup dan responsif terhadap input pengguna.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title" onclick="showContent('content2')">2. Bagaimana HTML, CSS, dan JavaScript dapat Diintegrasikan dalam Pemrograman Web?</h2>
+            <div id="content2" class="content" style="display: none;">
+                <h3 onclick="confirmToggleContent('htmlContent2', 'HTML')">1. HTML Sebagai Struktur Dasar</h3>
+                <div id="htmlContent2" class="subcontent" style="display: none;">
+                    <p>HTML mendefinisikan elemen-elemen pada halaman, seperti teks paragraf, gambar, dan tombol. Misalnya, elemen &lt;p&gt;, &lt;img&gt;, digunakan untuk menampilkan teks.</p>
+                </div>
+
+                <h3 onclick="confirmToggleContent('cssContent2', 'CSS')">2. CSS untuk Gaya dan Tata Letak</h3>
+                <div id="cssContent2" class="subcontent" style="display: none;">
+                    <p>CSS diintegrasikan ke HTML melalui tiga metode utama:
+                        <ul>
+                            <li><strong>Inline:</strong> Langsung ditulis pada atribut elemen HTML, misalnya &lt;p style="color: blue;"&gt;.</li>
+                            <li><strong>Internal:</strong> Ditulis dalam tag &lt;style&gt; di bagian &lt;head&gt; dokumen HTML.</li>
+                            <li><strong>Eksternal:</strong> Menggunakan file terpisah (.css) yang dihubungkan dengan tag &lt;link&gt;.</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <h3 onclick="confirmToggleContent('jsContent2', 'JavaScript')">3. JavaScript untuk Interaktivitas</h3>
+                <div id="jsContent2" class="subcontent" style="display: none;">
+                    <p>JavaScript diintegrasikan ke dalam HTML melalui:
+                        <ul>
+                            <li><strong>Internal Script:</strong> Ditulis dalam elemen &lt;script&gt; di bagian &lt;head&gt; atau sebelum penutup &lt;/body&gt;.</li>
+                            <li><strong>Eksternal Script:</strong> Menggunakan file .js yang dihubungkan dengan tag &lt;script src="script.js"&gt;.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
